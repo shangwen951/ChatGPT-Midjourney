@@ -15,9 +15,9 @@ FROM base AS builder
 
 RUN apk update && apk add --no-cache git
 
-ENV OPENAI_API_KEY=""
-ENV MIDJOURNEY_PROXY_URL=""
-ENV CODE=""
+ENV OPENAI_API_KEY="123"
+ENV MIDJOURNEY_PROXY_URL="123"
+ENV CODE="123"
 
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
